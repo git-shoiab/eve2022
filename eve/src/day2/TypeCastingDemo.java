@@ -34,5 +34,6 @@ public class TypeCastingDemo {
 		cc=(char)num;//all numbers cannot be characters - and more over num is 32 bit and char is 16 bit
 		num=cc;//character can be assigned to a number - because all characters are numbers
 		
+		
 	}
 }
