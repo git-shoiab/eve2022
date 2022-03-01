@@ -10,6 +10,7 @@ public class StaticDemo3 {
 	}
 }
 
+
 class Outer{
 	static int i=100;
 	static void metS() {
