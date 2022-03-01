@@ -1,5 +1,5 @@
 package ch6;
-
+//https://fluvid.com/videos/detail/n8QdniK94XIXBkR1v#.Yh2ByRHQaWE.link
 public class StaticDemo2 {
 	public static void main(String[] args) {
 		//StatBlock obj=new StatBlock();
