@@ -54,5 +54,5 @@ class MeetingHall extends Hall{
 	
 }
 
-final class Paint{}//final classes cannot be inherited
-class RedPaint extends Paint{}
+//final class Paint{}//final classes cannot be inherited
+//class RedPaint extends Paint{}
