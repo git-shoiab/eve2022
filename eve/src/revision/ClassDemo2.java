@@ -5,7 +5,7 @@ public class ClassDemo2 {
 	public static void main(String[] args) {
 		ClassDemo2 obj=new ClassDemo2();
 		obj.sadhaMet();
-		ClassDemo2.met();
+		met();
 		ClassDemo2.met(10);
 		ClassDemo2.met2();
 		
