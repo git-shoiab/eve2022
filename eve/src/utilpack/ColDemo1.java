@@ -1,14 +1,19 @@
 package utilpack;
 //https://fluvid.com/videos/detail/5Ad-5CB1MOIARLR6D#.YnXggiu8HMs.link
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Enumeration;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.ListIterator;
+import java.util.Vector;
 
 public class ColDemo1 {
 public static void main(String[] args) {
 	int arr[]=new int[4];
-	
-	ArrayList<String> alist=new ArrayList();
+	//ArrayList<String> alist=new ArrayList<>();
+	//LinkedList<String> alist=new LinkedList();
+	Vector<String> alist=new Vector<>();
 	System.out.println("After Creating...:"+alist.size());
 	alist.add("rahim");
 	alist.add("ram");
@@ -39,11 +44,24 @@ public static void main(String[] args) {
 	}
 	
 	ListIterator<String> liter=alist.listIterator();
+	//alist.add("bbbbbbbbbbbbbbbb");
 	while(liter.hasNext()) {
 		System.out.println("nnnnnnnnnnnnnnnnnn..:"+liter.next());
 	}
 	while(liter.hasPrevious()) {
 		System.out.println("pppppppppppppppp...:"+liter.previous());
 	}
+	//only for vector
+	Enumeration<String> en=alist.elements();
+	alist.add("bbbbbbbbbbbbbbbb");
+	while(en.hasMoreElements()) {
+		System.out.println(en.nextElement());
+	}
+	
+	System.out.println(alist.contains("rahim"));
+	
+	System.out.println(alist);
+	Collections.sort(alist);
+	System.out.println(alist);
 }
 }
